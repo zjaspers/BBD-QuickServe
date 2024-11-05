@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raising Cane's Best-By Date Checklist</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #c8102e;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .notes {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e7f3fe;
+            border-left: 6px solid #c8102e;
+        }
+        input[type="date"], input[type="text"] {
+            width: 100%;
+            padding: 6px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Raising Cane's Best-By Date Checklist</h1>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Ingredient</th>
+                <th>Unopened Shelf Life</th>
+                <th>Opened Shelf Life</th>
+                <th>Date Opened</th>
+                <th>Best By Date</th>
+                <th>Checked By</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Chicken (raw)</td>
+                <td>1-2 days in refrigerator</td>
+                <td>Use within 24 hours</td>
+                <td><input type="date" name="chickenDateOpened"></td>
+                <td><input type="date" name="chickenBestByDate"></td>
+                <td><input type="text" name="chickenCheckedBy" placeholder="Your name"></td>
+            </tr>
+            <tr>
+                <td>Marinade</td>
+                <td>7-10 days in refrigerator</td>
+                <td>3-5 days</td>
+                <td><input type="date" name="marinadeDateOpened"></td>
+                <td><input type="date" name="marinadeBestByDate"></td>
+                <td><input type="text" name="marinadeCheckedBy" placeholder="Your name"></td>
+            </tr>
+            <tr>
+                <td>Canola Oil</td>
+                <td>6 months unopened</td>
+                <td>6 months</td>
+                <td><input type="date" name="oilDateOpened"></td>
+                <td><input type="date" name="oilBestByDate"></td>
+                <td><input type="text" name="oilCheckedBy" placeholder="Your name"></td>
+            </tr>
+            <tr>
+                <td>Bread (Texas Toast)</td>
+                <td>5-7 days in refrigerator</td>
+                <td>3-5 days</td>
+                <td><input type="date" name="breadDateOpened"></td>
+                <td><input type="date" name="breadBestByDate"></td>
+                <td><input type="text" name="breadCheckedBy" placeholder="Your name"></td>
+            </tr>
+            <tr>
+                <td>Cane's Sauce</td>
+                <td>7-10 days unopened in refrigerator</td>
+                <td>3-5 days</td>
+                <td><input type="date" name="sauceDateOpened"></td>
+                <td><input type="date" name="sauceBestByDate"></td>
+                <td><input type="text" name="sauceCheckedBy" placeholder="Your name"></td>
+            </tr>
+            <tr>
+                <td>Coleslaw Dressing</td>
+                <td>7-10 days unopened in refrigerator</td>
+                <td>3-5 days</td>
+                <td><input type="date" name="coleslawDressingDateOpened"></td>
+                <td><input type="date" name="coleslawDressingBestByDate"></td>
+                <td><input type="text" name="coleslawDressingCheckedBy" placeholder="Your name"></td>
+            </tr>
+            <tr>
+                <td>Coleslaw Mix</td>
+                <td>5-7 days unopened in refrigerator</td>
+                <td>1-2 days</td>
+                <td><input type="date" name="coleslawMixDateOpened"></td>
+                <td><input type="date" name="coleslawMixBestByDate"></td>
+                <td><input type="text" name="coleslawMixCheckedBy" placeholder="Your name"></td>
+            </tr>
+            <tr>
+                <td>Ketchup Packets</td>
+                <td>Best by date on packet</td>
+                <td>Best by date on packet</td>
+                <td><input type="date" name="ketchupDateOpened"></td>
+                <td><input type="date" name="ketchupBestByDate"></td>
+                <td><input type="text" name="ketchupCheckedBy" placeholder="Your name"></td>
+            </tr>
+            <tr>
+                <td>Salt</td>
+                <td>Indefinite</td>
+                <td>Indefinite</td>
+                <td><input type="date" name="saltDateOpened"></td>
+                <td><input type="date" name="saltBestByDate"></td>
+                <td><input type="text" name="saltCheckedBy" placeholder="Your name"></td>
+            </tr>
+            <tr>
+                <td>Pepper</td>
+                <td>2-3 years unopened</td>
+                <td>1-2 years</td>
+                <td><input type="date" name="pepperDateOpened"></td>
+                <td><input type="date" name="pepperBestByDate"></td>
+                <td><input type="text" name="pepperCheckedBy" placeholder="Your name"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="notes">
+        <h3>Important Notes:</h3>
+        <ul>
+            <li>Always check for signs of spoilage (odor, discoloration, texture changes) before using, regardless of the date.</li>
+            <li>Keep all perishable items refrigerated at the recommended temperatures.</li>
+            <li>Use the "First In, First Out" (FIFO) method when stocking ingredients.</li>
+            <li>For items with no expiration date (like salt), check periodically for quality.</li>
+            <li>This checklist should be updated daily as part of standard operating procedures.</li>
+        </ul>
+    </div>
+</body>
+</html>
